@@ -18,10 +18,10 @@ export default function Signup()
        try {
         setLoading(true);
         const response= await axios.post("api/users/signup",user)
-        console.log("The response form route.ts is ",response.message)    
+        console.log("The response form route.ts is ",response)    
         router.push("/login")   
        } catch (error:any) {
-        console.log("error while sign up ",error.message)
+        console.log("error while sign up new paegeeeee",error.message)
         
        }finally{
         setLoading(false);
